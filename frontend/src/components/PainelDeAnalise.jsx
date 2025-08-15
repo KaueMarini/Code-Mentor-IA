@@ -18,16 +18,14 @@ function PainelDeAnalise({ analise, carregando }) {
 
   return (
     <div className="analise-container">
-      <div className="card card-score">
-        <h3>Pontuação de Qualidade</h3>
-        <div className="score-circle">
-          <span>{analise.pontuacao.toFixed(1)}</span>
+      {/* Card Principal: Diagnóstico (Pontuação + Sugestões) */}
+      <div className="card card-diagnostico">
+        <div className="diagnostico-header">
+          <h3>Diagnóstico do Mentor</h3>
+          <div className="score-badge">
+            Nota: <span>{analise.pontuacao.toFixed(1)}</span>
+          </div>
         </div>
-        <p>Nota de 0 a 10 para o código original.</p>
-      </div>
-
-      <div className="card card-suggestions">
-        <h3>Sugestões do Mentor</h3>
         <ul>
           {analise.sugestoes.map((sugestao, index) => (
             <li key={index} dangerouslySetInnerHTML={{ __html: sugestao }}></li>
@@ -35,6 +33,7 @@ function PainelDeAnalise({ analise, carregando }) {
         </ul>
       </div>
 
+      {/* Card Secundário: Código Refatorado */}
       <div className="card card-refactored">
         <h3>Código Refatorado</h3>
         <pre>

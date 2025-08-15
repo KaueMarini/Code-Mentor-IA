@@ -46,6 +46,7 @@ function App() {
           linguagem={linguagem}
           setLinguagem={setLinguagem}
         />
+        {/* A área de análise só aparece depois de clicar no botão */}
         {showResultado && (
           <PainelDeAnalise analise={analise} carregando={carregando} />
         )}
