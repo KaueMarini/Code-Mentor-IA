@@ -26,11 +26,27 @@ function PainelDeAnalise({ analise, carregando }) {
             Nota: <span>{analise.pontuacao.toFixed(1)}</span>
           </div>
         </div>
-        <ul>
-          {analise.sugestoes.map((sugestao, index) => (
-            <li key={index} dangerouslySetInnerHTML={{ __html: sugestao }}></li>
-          ))}
-        </ul>
+       <ul>
+  {analise.sugestoes.map((sugestao, index) => {
+    // 1. Divide a string no primeiro ":**" para separar o título da descrição.
+    const parts = sugestao.split(':**');
+    
+    // 2. Limpa o título, removendo os asteriscos.
+    const title = parts[0] ? parts[0].replace(/\*\*/g, '') : '';
+    
+    // 3. O resto é a descrição. Juntamos caso haja outros ":" no texto.
+    const description = parts.length > 1 ? parts.slice(1).join(':**') : '';
+
+    return (
+      <li key={index}>
+        {/* Renderiza o título em negrito e a descrição como texto normal */}
+        <strong>{title}:</strong>
+        <span>{description}</span>
+      </li>
+    );
+  })}
+</ul>
+
       </div>
 
       {/* Card Secundário: Código Refatorado */}
