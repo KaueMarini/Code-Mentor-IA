@@ -1,8 +1,8 @@
-# 🤖 Code-Mentor AI
+#  Code-Mentor AI
 
 Code-Mentor AI é uma aplicação web Full Stack que utiliza a API generativa do Google (Gemini) para fornecer análises e sugestões de refatoração de código em tempo real. Este projeto foi construído para servir como uma ferramenta de aprendizado e um assistente de programação, ajudando desenvolvedores a escreverem código mais limpo e eficiente.
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 * **Análise Inteligente:** Submeta trechos de código em diversas linguagens (Python, JavaScript, etc.).
 * **Pontuação de Qualidade:** Receba uma nota de 0 a 10 pela qualidade do código original.
@@ -10,7 +10,7 @@ Code-Mentor AI é uma aplicação web Full Stack que utiliza a API generativa do
 * **Código Refatorado:** Veja uma versão do seu código reescrita pela IA, aplicando as melhores práticas.
 * **Interface Interativa:** Um editor de código com destaque de sintaxe para uma experiência de usuário agradável.
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 * **Front-end:** React (com Vite)
 * **Back-end:** Python com FastAPI
@@ -18,7 +18,7 @@ Code-Mentor AI é uma aplicação web Full Stack que utiliza a API generativa do
 * **Comunicação:** API REST
 * **Bibliotecas Principais:** `google-generativeai`, `react-simple-code-editor`, `uvicorn`.
 
-## 🛠️ Como Executar Localmente
+##  Como Executar Localmente
 
 ### Pré-requisitos
 * Node.js e npm
