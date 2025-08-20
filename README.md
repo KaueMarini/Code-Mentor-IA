@@ -68,3 +68,4 @@ A aplicação estará acessível em `http://localhost:5173`.
 
 
 Colocar um FallBack
+Colocar um Retry
