@@ -63,3 +63,8 @@ O servidor estará rodando em `http://127.0.0.1:8000`.
     npm run dev
     ```
 A aplicação estará acessível em `http://localhost:5173`.
+
+
+
+
+Colocar um FallBack
